@@ -30,7 +30,6 @@ body {
 .navbar a:hover {
   border-top: 3px solid #0065fc;
   padding-top: 42px;
-  padding-right: 10px;
   color: #0065fc;
 }
 
