@@ -1,0 +1,39 @@
+body {
+  padding-left: 50px;
+}
+
+.navheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.navheader img {
+  width: 5em;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin-right: 80px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0065fc;
+}
+
+.navbar a:hover {
+  border-top: 3px solid #0065fc;
+  padding-top: 42px;
+  padding-right: 10px;
+  color: #0065fc;
+}
+
+.navbar a:active {
+  color: black;
+}
