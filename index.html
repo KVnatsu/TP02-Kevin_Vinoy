@@ -37,34 +37,41 @@
     </header>
 
     <section class="search">
-      <p>Trouvez votre hebergement pour des vacances de rêve</p>
-      <p>En plein centre ville ou en pleine nature</p>
+      <div class="title_search">
+        <h2>Trouvez votre hebergement pour des vacances de rêve</h2>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
 
       <!-- Formulaire et bouton-->
       <div class="bar_search">
+        <p id="logo_search"><i class="fas fa-map-marker-alt"></i></p>
         <form action="traitement.php" method="post">
-          <label for="search"><i class="fas fa-map-marker-alt"></i></label>
-          <p><input type="search" name="city" id="city" /></p>
+          <label for="search"></label>
+          <input type="search" name="city" id="city" />
         </form>
 
         <button class="button_search" type="button">Rechercher</button>
       </div>
 
       <div class="filtre">
-        <h2>Filtre</h2>
+        <h2>Filtres</h2>
 
         <ul>
+          <p><i class="fas fa-money-bill-wave"></i></p>
           <li>
-            <a href="#"><i class="fas fa-money-bill-wave"></i>Economique</a>
+            <a href="#">Economique</a>
           </li>
+          <p><i class="fas fa-male"></i></p>
           <li>
-            <a href="#"><i class="fas fa-male"></i>Familial</a>
+            <a href="#">Familial</a>
           </li>
+          <p><i class="fas fa-heart"></i></p>
           <li>
-            <a href="#"><i class="fas fa-heart"></i>Romantique</a>
+            <a href="#">Romantique</a>
           </li>
+          <p><i class="fas fa-dog"></i></p>
           <li>
-            <a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a>
+            <a href="#">Animaux autorisés</a>
           </li>
         </ul>
       </div>
