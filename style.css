@@ -36,3 +36,80 @@ body {
 .navbar a:active {
   color: black;
 }
+
+/* Titre + Filtre + barre de recherche */
+
+.title_search {
+  position: relative;
+}
+
+.title_search p {
+  position: absolute;
+  top: 13px;
+}
+
+/* Button + barre de recherche */
+
+.bar_search {
+  display: flex;
+  align-items: center;
+}
+
+.bar_search i {
+  margin-right: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.bar_search p {
+  font-size: 1em;
+}
+
+#logo_search {
+  border: 1px;
+  height: 38px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.button_search {
+  border: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  background-color: #0065fc;
+  height: 40px;
+  width: 5%;
+}
+
+#city {
+  border: 2px solid;
+  border-color: #f2f2f2;
+  font-size: medium;
+  height: 40px;
+}
+
+/* Filtre */
+
+.filtre {
+  display: flex;
+  align-items: center;
+}
+
+.filtre ul {
+  display: flex;
+  list-style-type: none;
+  align-items: baseline;
+}
+
+.filtre li {
+  margin-right: 60px;
+  border: 2px solid;
+  border-radius: 15px;
+  height: 40px;
+}
+
+.filtre a {
+  text-decoration: none;
+}
