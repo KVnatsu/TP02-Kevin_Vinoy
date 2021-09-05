@@ -170,7 +170,6 @@ body {
   display: flex;
   list-style: none;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
   border-radius: 20px;
   border: 5px solid transparent;
@@ -203,7 +202,7 @@ a {
 }
 
 .town-case .town-text .hotel-name {
-  margin: 0;
+  margin: 0px;
 }
 
 .town-case .town-text .hotel-price {
@@ -216,4 +215,151 @@ a {
 
 .hostingStarsIconEmpty {
   color: #d9d9d9;
+}
+
+/*  Hebergement populaire */
+
+.bloc-hosting-popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.most-popular {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr 1fr;
+  row-gap: 25px;
+  height: 90%;
+  width: 90%;
+}
+
+.hosting-popular#popular-room1 {
+  display: flex;
+  margin: 0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 7px 0 7px 7px;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.hosting-popular#popular-room2 {
+  display: flex;
+  margin: 0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 7px 0 7px 7px;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.hosting-popular#popular-room3 {
+  display: flex;
+  margin: 0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 7px 0 7px 7px;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.hosting-popular-case-img {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+}
+
+.hosting-popular-case-img img {
+  width: 100%;
+  height: 100%;
+  max-height: 110px;
+  min-width: 170px;
+  border-radius: 20px 0 0 15px;
+  object-fit: cover;
+}
+
+.hosting-popular .town-text {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hosting-popular .town-text .hotel-name {
+  padding: 4px 0;
+  margin: 0;
+}
+
+.hosting-popular .town-text .hotel-price {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* activités */
+
+.town-activity {
+  height: 550px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+  gap: 30px;
+  grid-template-areas:
+    "activity-1 activity-2 activity-4 activity-5"
+    "activity-1 activity-2 activity-4 activity-5"
+    "activity-1 activity-2 activity-4 activity-6"
+    "activity-1 activity-2 activity-4 activity-6"
+    "activity-1 activity-3 activity-4 activity-6"
+    "activity-1 activity-3 activity-4 activity-6";
+}
+
+#activity1 {
+  grid-area: activity-1;
+}
+#activity2 {
+  grid-area: activity-2;
+}
+#activity3 {
+  grid-area: activity-3;
+}
+#activity4 {
+  grid-area: activity-4;
+}
+#activity5 {
+  grid-area: activity-5;
+}
+#activity6 {
+  grid-area: activity-6;
+}
+
+.activity-card img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.town-activity .activity-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 17px -9px rgb(0 0 0 / 75%);
+}
+
+.englobe {
+  height: 100%;
+  margin: 0;
+}
+
+.card-title {
+  position: absolute;
+  background-color: white;
+  width: 95%;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 0 20px 5%;
+  margin: 0;
+  bottom: 0;
 }
