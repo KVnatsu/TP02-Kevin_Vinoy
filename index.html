@@ -36,20 +36,24 @@
     </header>
 
     <section class="search">
-      <div class="title_search">
-        <h2>Trouvez votre hebergement pour des vacances de rêve</h2>
-        <p>En plein centre ville ou en pleine nature</p>
+      <div>
+        <h1 id="title-h1">
+          Trouvez votre hebergement pour des vacances de rêve
+        </h1>
+        <p id="subtitle">En plein centre ville ou en pleine nature</p>
       </div>
 
       <!-- Formulaire et bouton-->
-      <div class="bar_search">
-        <p id="logo_search"><span class="fas fa-map-marker-alt"></span></p>
-        <form action="traitement.php" method="post">
-          <label for="city"></label>
-          <input type="search" name="city" id="city" />
-        </form>
-
-        <button class="button_search" type="button">Rechercher</button>
+      <div class="research-box">
+        <div class="icon-location">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <input
+          type="text"
+          placeholder="Marseille, France"
+          class="research-bar"
+        />
+        <button class="button-research" id="button-research">Rechercher</button>
       </div>
 
       <div class="filtre">
@@ -319,8 +323,6 @@
     <h2>Activites a Marseille</h2>
 
     <section class="town-activity">
-    
-
       <div class="activity-card" id="activity1">
         <div class="englobe">
           <img
@@ -328,7 +330,7 @@
             alt=""
           />
 
-          <h3 class="card-title">Vieux Port</h2>
+          <h3 class="card-title">Vieux Port</h3>
         </div>
       </div>
 
@@ -339,7 +341,7 @@
             alt=""
           />
 
-          <h3 class="card-title">Fort de Pomégues</h2>
+          <h3 class="card-title">Fort de Pomégues</h3>
         </div>
       </div>
 
@@ -350,7 +352,7 @@
             alt=""
           />
 
-          <h3 class="card-title">Iles du Frioul</h2>
+          <h3 class="card-title">Iles du Frioul</h3>
         </div>
       </div>
 
@@ -361,7 +363,7 @@
             alt=""
           />
 
-          <h3 class="card-title">Parc National des Calanques</h2>
+          <h3 class="card-title">Parc National des Calanques</h3>
         </div>
       </div>
 
@@ -372,7 +374,7 @@
             alt=""
           />
 
-          <h3 class="card-title">Notre-dame-de-la-Garde</h2>
+          <h3 class="card-title">Notre-dame-de-la-Garde</h3>
         </div>
       </div>
 
@@ -383,7 +385,7 @@
             alt=""
           />
 
-          <h3 class="card-title">Parc Longchamp</h2>
+          <h3 class="card-title">Parc Longchamp</h3>
         </div>
       </div>
     </section>
@@ -399,15 +401,15 @@
           <a class="footer-link">Conditions generales de vente</a>
           <a class="footer-link">Donnèes et confidentialite</a>
         </div>
-  
+
         <div class="footer-block">
           <h2 class="footer-title">Nos hebergements</h2>
 
           <a class="footer-link">Charte qualité</a>
           <a class="footer-link">Soumettre votre hotel</a>
         </div>
-  
-        <div class="footer-block footer-block-assistance" >
+
+        <div class="footer-block footer-block-assistance">
           <h2 class="footer-title">Assistance</h2>
 
           <a class="footer-link">Centre d'aide</a>
