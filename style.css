@@ -57,15 +57,6 @@ main {
   margin: 6px 0px;
 }
 
-.title_search {
-  position: relative;
-}
-
-.title_search p {
-  position: absolute;
-  top: 13px;
-}
-
 /* Button + barre de recherche */
 
 .research-box {
