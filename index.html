@@ -36,59 +36,62 @@
       </nav>
     </header>
 
-    <section class="search">
-      <div>
-        <h1 id="title-h1">
-          Trouvez votre hebergement pour des vacances de rêve
-        </h1>
-        <p id="subtitle">En plein centre ville ou en pleine nature</p>
-      </div>
-
-      <!-- Formulaire et bouton-->
-      <div class="research-box">
-        <div class="icon-location">
-          <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <input
-          type="text"
-          placeholder="Marseille, France"
-          class="research-bar"
-        />
-        <button class="button-research" id="button-research">Rechercher</button>
-      </div>
-
-      <div class="filtre">
-        <h2>Filtres</h2>
-
-        <a href="#" class="filtre_button"
-          ><span class="fas fa-money-bill-wave icon-filter"></span>Économique</a
-        >
-
-        <a href="#" class="filtre_button"
-          ><span class="fas fa-child icon-filter"></span>Familial</a
-        >
-
-        <a href="#" class="filtre_button"
-          ><span class="fas fa-heart icon-filter"></span>Romantique</a
-        >
-
-        <a href="#" class="filtre_button"
-          ><span class="fas fa-dog icon-filter"></span>Animaux autorisés</a
-        >
-      </div>
-
-      <div id="info">
-        <span class="fas fa-info"></span>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
-    </section>
-
-    <!-- Partie de l'hebergement -->
-
     <main>
+      <!-- Barre de recherche et titre -->
+      <section class="search">
+        <div>
+          <h1 id="title-h1">
+            Trouvez votre hebergement pour des vacances de rêve
+          </h1>
+          <p id="subtitle">En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <!-- Formulaire et bouton-->
+        <div class="research-box">
+          <div class="icon-location">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <input
+            type="text"
+            placeholder="Marseille, France"
+            class="research-bar"
+          />
+          <button class="button-research" id="button-research">
+            Rechercher
+          </button>
+        </div>
+
+        <div class="filtre">
+          <h2>Filtres</h2>
+
+          <a href="#" class="filtre_button"
+            ><span class="fas fa-money-bill-wave icon-filter"></span
+            >Économique</a
+          >
+
+          <a href="#" class="filtre_button"
+            ><span class="fas fa-child icon-filter"></span>Familial</a
+          >
+
+          <a href="#" class="filtre_button"
+            ><span class="fas fa-heart icon-filter"></span>Romantique</a
+          >
+
+          <a href="#" class="filtre_button"
+            ><span class="fas fa-dog icon-filter"></span>Animaux autorisés</a
+          >
+        </div>
+
+        <div id="info">
+          <span class="fas fa-info"></span>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+      </section>
+
+      <!-- Partie de l'hebergement -->
       <section class="blocs" id="blocs">
         <div class="bloc bloc-hosting">
-          <h2>Hebergements à Marseille</h2>
+          <h2 class="title-h2 push-to-right">Hebergements à Marseille</h2>
           <div class="town-cases">
             <a href="#">
               <div class="town-case">
@@ -228,7 +231,9 @@
               </div>
             </a>
           </div>
-          <p>Afficher plus</p>
+          <p class="show-more push-to-right">
+            <a href="#"><strong>Afficher plus</strong> </a>
+          </p>
         </div>
 
         <!-- hebergement populaire -->
@@ -318,80 +323,81 @@
           </div>
         </div>
       </section>
+
+      <!--Partie Activités -->
+
+      <h2 class="title-h2" id="title-activities">Activites a Marseille</h2>
+
+      <section class="town-activity">
+        <div class="activity-card" id="activity1">
+          <div class="englobe">
+            <img
+              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+              alt=""
+            />
+
+            <h3 class="card-title">Vieux Port</h3>
+          </div>
+        </div>
+
+        <div class="activity-card" id="activity2">
+          <div class="englobe">
+            <img
+              src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              alt=""
+            />
+
+            <h3 class="card-title">Fort de Pomégues</h3>
+          </div>
+        </div>
+
+        <div class="activity-card" id="activity3">
+          <div class="englobe">
+            <img
+              src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+              alt=""
+            />
+
+            <h3 class="card-title">Iles du Frioul</h3>
+          </div>
+        </div>
+
+        <div class="activity-card" id="activity4">
+          <div class="englobe">
+            <img
+              src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+              alt=""
+            />
+
+            <h3 class="card-title">Parc National des Calanques</h3>
+          </div>
+        </div>
+
+        <div class="activity-card" id="activity5">
+          <div class="englobe">
+            <img
+              src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              alt=""
+            />
+
+            <h3 class="card-title">Notre-dame-de-la-Garde</h3>
+          </div>
+        </div>
+
+        <div class="activity-card" id="activity6">
+          <div class="englobe">
+            <img
+              src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+              alt=""
+            />
+
+            <h3 class="card-title">Parc Longchamp</h3>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!--Partie Activités -->
-    <h2>Activites a Marseille</h2>
-
-    <section class="town-activity">
-      <div class="activity-card" id="activity1">
-        <div class="englobe">
-          <img
-            src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-            alt=""
-          />
-
-          <h3 class="card-title">Vieux Port</h3>
-        </div>
-      </div>
-
-      <div class="activity-card" id="activity2">
-        <div class="englobe">
-          <img
-            src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-            alt=""
-          />
-
-          <h3 class="card-title">Fort de Pomégues</h3>
-        </div>
-      </div>
-
-      <div class="activity-card" id="activity3">
-        <div class="englobe">
-          <img
-            src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-            alt=""
-          />
-
-          <h3 class="card-title">Iles du Frioul</h3>
-        </div>
-      </div>
-
-      <div class="activity-card" id="activity4">
-        <div class="englobe">
-          <img
-            src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-            alt=""
-          />
-
-          <h3 class="card-title">Parc National des Calanques</h3>
-        </div>
-      </div>
-
-      <div class="activity-card" id="activity5">
-        <div class="englobe">
-          <img
-            src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-            alt=""
-          />
-
-          <h3 class="card-title">Notre-dame-de-la-Garde</h3>
-        </div>
-      </div>
-
-      <div class="activity-card" id="activity6">
-        <div class="englobe">
-          <img
-            src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-            alt=""
-          />
-
-          <h3 class="card-title">Parc Longchamp</h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- Partie bas de page -->
+    <!-- Partie bas de page footer -->
 
     <footer class="footer">
       <div id="block-footer">

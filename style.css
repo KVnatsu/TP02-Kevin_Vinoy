@@ -206,6 +206,12 @@ main {
   background: #f2f2f2;
 }
 
+.bloc-hosting .push-to-right {
+  display: block;
+  width: 100%;
+  margin-left: 40px;
+}
+
 .bloc-hosting {
   display: flex;
   flex-direction: column;
