@@ -280,6 +280,21 @@ a {
 
 /*  Hebergement populaire */
 
+.most-popular .title-h2-and-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.most-popular .title-h2-and-icon h2 {
+  margin: 0;
+}
+
+.most-popular span {
+  font-size: 26px;
+}
+
 .bloc-hosting-popular {
   display: flex;
   justify-content: center;
