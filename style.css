@@ -490,14 +490,14 @@ a {
     grid-template-rows: 0.5fr 1fr;
     row-gap: 30px;
     grid-template-areas:
-      "bloc-most-popular"
-      "bloc-accomodation";
+      "bloc-hosting-popular"
+      "bloc-hosting";
   }
   .blocs .bloc-hosting {
-    grid-area: bloc-accomodation;
+    grid-area: bloc-hosting;
   }
   .blocs .bloc-hosting-popular {
-    grid-area: bloc-most-popular;
+    grid-area: bloc-hosting-popular;
   }
   .town-cases {
     width: 100%;
@@ -549,7 +549,7 @@ a {
     min-width: 0;
   }
 
-  .town-activities {
+  .town-activity {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -587,16 +587,17 @@ a {
   }
 }
 
+/* 2 point de rupture 1200px */
+
 @media screen and (max-width: 1200px) {
   main {
     width: 95%;
   }
 }
 
+/* 3 point de rupture 900px */
+
 @media screen and (max-width: 900px) {
-  main {
-    width: 92%;
-  }
   .town-cases {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -631,6 +632,8 @@ a {
       "activity-5 activity-6";
   }
 }
+
+/* 4 point de rupture 600px */
 
 @media screen and (max-width: 600px) {
   .blocs {
@@ -675,7 +678,7 @@ a {
   }
 
   .research-bar {
-    width: 300px;
+    width: 200px;
     height: 49px;
   }
   #button-research {
