@@ -6,7 +6,7 @@ body {
 header,
 section,
 main {
-  width: 99%;
+  width: 98%;
   max-width: 1440px;
   margin: auto;
 }
@@ -124,6 +124,10 @@ main {
   border-radius: 14px 0 0 14px;
 }
 
+.fa-map-marker-alt {
+  font-size: 17px;
+}
+
 .research-bar {
   padding: 0 0 0 20px;
   height: 50px;
@@ -131,6 +135,12 @@ main {
   border: none;
   border-top: solid 1px #f2f2f2;
   border-bottom: solid 1px #f2f2f2;
+}
+
+.research-bar::placeholder {
+  color: rgb(170, 170, 170);
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .button-research {
@@ -144,65 +154,111 @@ main {
   cursor: pointer;
 }
 
+.button-research:hover {
+  background-color: #003c96;
+  transition: ease 0.3s;
+}
+
+#icon-glass {
+  display: none;
+}
+
 .fa-map-marker-alt {
   font-size: 17px;
 }
 
 /* Filtre */
 
-.filtre {
+.filters {
   display: flex;
   align-items: center;
 }
 
-.filtre_button {
+.button-research {
+  border: none;
+  border-radius: 0 14px 14px 0;
+  background-color: #0065fc;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.button-research:hover {
+  background-color: #003c96;
+  transition: ease 0.3s;
+}
+
+#icon-glass {
+  display: none;
+}
+
+.filters h3 {
+  font-size: 24px;
+  display: inline;
+}
+
+.filters ul {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.filters ul li {
+  display: inline;
   margin-left: 25px;
   font-weight: 700;
-  border: 2px solid #e2e2e2;
-  border-radius: 200px;
-  margin-top: 10px;
+  border: solid 2px #e2e2e2;
   padding: 0 20px 0 0;
-  text-decoration: none;
-  color: black;
+  margin-top: 10px;
+  border-radius: 200px;
+}
+
+.filters ul li:hover {
+  cursor: pointer;
+  background: #deebff;
+  transition-duration: 0.25s;
+}
+
+.filters ul li:hover .icon-filter {
+  background: white;
+  transition-duration: 0.25s;
 }
 
 .icon-filter {
   background-color: #deebff;
   color: #0065fc;
-  padding: 15px;
+  padding: 18px;
   border-radius: 200px;
   margin-right: 15px;
 }
 
-#info {
-  margin-top: 20px;
-  display: block;
-}
-
-#info p {
-  display: inline;
-}
-
-#info span {
+.info .fas {
   color: #0065fc;
   font-size: 16px;
   padding: 7px 11px 7px 11px;
-  border: 1px solid #d9d9d9;
+  border: solid 1px #d9d9d9;
   border-radius: 2000px;
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+.info p {
+  display: inline;
 }
 
 /* Partie MAIN */
 
 .blocs {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.9fr 1fr;
   column-gap: 40px;
-  margin: 20px 0 30px 0;
+  margin: 40px 0 60px 0;
 }
 
 .bloc {
-  border-radius: 20px;
+  border-radius: 25px;
   background: #f2f2f2;
 }
 
@@ -237,7 +293,7 @@ main {
   box-shadow: 0px 0px 6px 0px #0000002e;
 }
 
-/* marseille-case parent et marseille-case-img enfant*/
+/* town-case parent et town-case-img enfant*/
 
 .town-case > .town-case-img {
   width: 250px;
@@ -500,14 +556,14 @@ a {
     grid-area: bloc-hosting-popular;
   }
   .town-cases {
-    width: 100%;
+    width: 95%;
   }
   .town-case > .town-case-img {
     width: 100%;
     height: 100px;
     background-size: cover;
   }
-  .hosting-popular {
+  .most-popular {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
@@ -516,25 +572,24 @@ a {
     width: 95%;
   }
 
-  .hosting-popular a {
+  .most-popular a {
     display: grid;
   }
 
-  .hosting-popular .title-h2-and-icon {
+  .most-popular .title-h2-and-icon {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin: 0;
     grid-area: 1 / 1 / 2 / -1;
   }
-  .hosting-popular .title-h2-and-icon h2 {
+  .most-popular .title-h2-and-icon h2 {
     margin: 0;
   }
-  .hosting-popular i {
-    font-size: 26px;
+  .most-popular span {
+    font-size: 15px;
   }
-  .hosting-popular {
-    background-color: grey;
+  .most-popular {
     height: auto;
   }
   .hosting-popular-case-img {
@@ -587,17 +642,17 @@ a {
   }
 }
 
-/* 2 point de rupture 1200px */
-
 @media screen and (max-width: 1200px) {
   main {
     width: 95%;
   }
 }
 
-/* 3 point de rupture 900px */
-
 @media screen and (max-width: 900px) {
+  main {
+    width: 92%;
+  }
+
   .town-cases {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -610,14 +665,13 @@ a {
     align-items: stretch;
     height: 560px;
   }
-
-  .bloc-hosting-popular .most-popular {
+  .bloc-hosting-popular .hosting-popular {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-top: 25px;
   }
-  .bloc-hosting-popular .most-popular .hosting-popular {
+  .bloc-hosting-popular .hosting-popular .hosting-popular {
     height: 120px;
   }
 
@@ -625,93 +679,10 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin-bottom: 370px;
+    margin-bottom: 360px;
     grid-template-areas:
       "activity-1 activity-2"
       "activity-4 activity-3"
       "activity-5 activity-6";
-  }
-}
-
-/* 4 point de rupture 600px */
-
-@media screen and (max-width: 600px) {
-  .blocs {
-    display: grid;
-    grid-template-rows: 1fr auto;
-  }
-  .town-cases {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-  .navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "logo navbar-link-sign-up"
-      "navbar-link-accomodation navbar-link-activities";
-  }
-  .navbar img {
-    grid-area: logo;
-  }
-  .navbar #navbar-link-accomodation {
-    flex-direction: column-reverse;
-    grid-area: navbar-link-accomodation;
-  }
-  .navbar #navbar-link-activities {
-    flex-direction: column-reverse;
-    grid-area: navbar-link-activities;
-  }
-  .navbar #navbar-link-activities .underline-effect {
-    background-color: #dbdbdb;
-  }
-  .navbar #navbar-link-sign-up {
-    display: flex;
-    justify-content: flex-end;
-    grid-area: navbar-link-sign-up;
-  }
-
-  .research-box {
-    position: relative;
-  }
-
-  .research-bar {
-    width: 200px;
-    height: 49px;
-  }
-  #button-research {
-    display: none;
-  }
-  #icon-glass {
-    display: block;
-    position: absolute;
-    right: -20px;
-    border-radius: 15px;
-  }
-  .hosting-popular-case-img img {
-    min-width: 145px;
-  }
-  .town-activity {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-      "activity-1"
-      "activity-2"
-      "activity-3"
-      "activity-4"
-      "activity-5"
-      "activity-6";
-    height: 1500px;
-    margin-bottom: 350px;
-  }
-  .block-footer {
-    display: inline-flex;
-    flex-direction: column;
-  }
-  .block-footer .footer-block {
-    padding: 10px 20px;
   }
 }
