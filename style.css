@@ -563,6 +563,10 @@ a {
     height: 100px;
     background-size: cover;
   }
+
+  .town-cases .town-text {
+    margin-top: 20px;
+  }
   .most-popular {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -649,30 +653,27 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-  main {
-    width: 92%;
+  .bloc-hosting-popular {
+    display: flex;
+    justify-content: center;
+    height: 560px;
+  }
+
+  .bloc-hosting-popular .hosting-popular {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 30px;
+  }
+
+  .bloc-hosting-popular .most-popular .hosting-popular {
+    height: 120px;
   }
 
   .town-cases {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-  }
-
-  .bloc-hosting-popular {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    height: 560px;
-  }
-  .bloc-hosting-popular .hosting-popular {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-top: 25px;
-  }
-  .bloc-hosting-popular .hosting-popular .hosting-popular {
-    height: 120px;
   }
 
   .town-activity {
@@ -684,5 +685,9 @@ a {
       "activity-1 activity-2"
       "activity-4 activity-3"
       "activity-5 activity-6";
+  }
+
+  .town-cases .town-text {
+    margin-top: 20px;
   }
 }
