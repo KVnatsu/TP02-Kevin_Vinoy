@@ -587,6 +587,7 @@ a {
     margin: 0;
     grid-area: 1 / 1 / 2 / -1;
   }
+
   .most-popular .title-h2-and-icon h2 {
     margin: 0;
   }
@@ -646,34 +647,39 @@ a {
   }
 }
 
+/* 2eme rupture */
+
 @media screen and (max-width: 1200px) {
   main {
     width: 95%;
   }
 }
 
+/* 3eme rupture */
+
 @media screen and (max-width: 900px) {
-  .bloc-hosting-popular {
-    display: flex;
-    justify-content: center;
-    height: 560px;
-  }
-
-  .bloc-hosting-popular .hosting-popular {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-top: 30px;
-  }
-
-  .bloc-hosting-popular .most-popular .hosting-popular {
-    height: 120px;
-  }
-
   .town-cases {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .bloc-hosting-popular {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 560px;
+  }
+
+  .bloc-hosting-popular .most-popular {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-bottom: 25px;
+  }
+
+  .bloc-hosting-popular .most-popular .hosting-popular {
+    height: 120px;
   }
 
   .town-activity {
@@ -685,9 +691,5 @@ a {
       "activity-1 activity-2"
       "activity-4 activity-3"
       "activity-5 activity-6";
-  }
-
-  .town-cases .town-text {
-    margin-top: 20px;
   }
 }
