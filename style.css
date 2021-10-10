@@ -769,12 +769,15 @@ a {
     height: 1500px;
     margin-bottom: 350px;
   }
-  .block-footer {
-    display: inline-flex;
+
+  #block-footer {
+    display: flex;
     flex-direction: column;
   }
-  .block-footer .footer-block {
-    padding: 10px 20px;
+  #block-footer .footer-block {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
   }
 }
 
