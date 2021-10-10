@@ -676,6 +676,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-bottom: 25px;
+    padding-top: 15px;
   }
 
   .bloc-hosting-popular .most-popular .hosting-popular {
@@ -691,5 +692,139 @@ a {
       "activity-1 activity-2"
       "activity-4 activity-3"
       "activity-5 activity-6";
+  }
+}
+
+/* 4eme rupture */
+
+@media screen and (max-width: 600px) {
+  .blocs {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  .town-cases {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "logo navbar-link-sign-up"
+      "navbar-link-accomodation navbar-link-activities";
+  }
+  .navbar img {
+    grid-area: logo;
+  }
+  .navbar #navbar-link-accomodation {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-accomodation;
+  }
+  .navbar #navbar-link-activities {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-activities;
+  }
+  .navbar #navbar-link-activities .underline-effect {
+    background-color: #dbdbdb;
+  }
+  .navbar #navbar-link-sign-up {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: navbar-link-sign-up;
+  }
+
+  .research-box {
+    position: relative;
+  }
+
+  .research-bar {
+    width: 300px;
+    height: 49px;
+  }
+  #button-research {
+    display: none;
+  }
+  #icon-glass {
+    display: block;
+    position: absolute;
+    right: -20px;
+    border-radius: 15px;
+  }
+  .hosting-popular-case-img img {
+    min-width: 145px;
+  }
+  .town-activity {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "activity-1"
+      "activity-2"
+      "activity-3"
+      "activity-4"
+      "activity-5"
+      "activity-6";
+    height: 1500px;
+    margin-bottom: 350px;
+  }
+  .block-footer {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .block-footer .footer-block {
+    padding: 10px 20px;
+  }
+}
+
+/* 5eme rupture */
+
+@media screen and (max-width: 550px) {
+  .hosting-popular-case-img img {
+    min-width: 125px;
+    max-width: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .research-box {
+    width: 80%;
+  }
+
+  .filters ul li {
+    padding: 0 12px 0 0;
+    margin-left: 5px;
+  }
+
+  .bloc {
+    border-radius: 0;
+  }
+
+  .bloc-hosting {
+    background: white;
+    margin-left: -15px;
+  }
+
+  .bloc-hosting-popular {
+    margin-left: -12px;
+    padding-right: 24px;
+    width: 100%;
+  }
+
+  .hosting-popular-case-img img {
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  .push-to-right {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hosting-popular-case-img img {
+    min-width: 80px;
+    max-width: 80px;
   }
 }
