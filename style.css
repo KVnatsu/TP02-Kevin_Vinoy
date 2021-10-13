@@ -609,9 +609,14 @@ a {
   .most-popular .title-h2-and-icon h2 {
     margin: 0;
   }
-  .most-popular span {
+  .most-popular .hostingStarsIcon {
     font-size: 15px;
   }
+
+  .most-popular .hostingStarsIconEmpty {
+    font-size: 15px;
+  }
+
   .most-popular {
     height: auto;
   }
